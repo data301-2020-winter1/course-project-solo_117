@@ -1,7 +1,6 @@
 [![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=313454&assignment_repo_type=GroupAssignmentRepo)
 # Group 117 - {Who is the Calgary Flames Best Player?}
 
-- Your title can change over time.
 
 ## Milestones
 
@@ -18,6 +17,5 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 ## Team Members
 John Price, 29027166
 
-## References
-
-{Add your stuff here}
+## Milestone 4
+My presentation is saved as an mp4 file in the main directory as "Milestone4Presentation"

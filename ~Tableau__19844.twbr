@@ -1,0 +1,1220 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1110.1623                               -->
+<workbook source-build='2020.3.3 (20203.20.1110.1623)' source-platform='win' version='18.1' xml:base='https://dub01.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='JohnPriceLab10Tableau' path='/t/data301dashboards/workbooks' revision='1.0' site='data301dashboards' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='FlamesDataClean' inline='true' name='federated.0bgynu301hb5vr19o97i41tuzo4y' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='FlamesDataClean' name='textscan.0l3ylgh1eslyet17de9x41e1g5ej'>
+            <connection class='textscan' directory='C:/Users/Jack Price/OneDrive/School/COSC.301/course-project-solo_117/data/processed' filename='FlamesDataClean.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0l3ylgh1eslyet17de9x41e1g5ej' name='FlamesDataClean.csv' table='[FlamesDataClean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='Player' ordinal='0' />
+            <column datatype='string' name='Hand' ordinal='1' />
+            <column datatype='string' name='Pos' ordinal='2' />
+            <column datatype='integer' name='GamesPlayed' ordinal='3' />
+            <column datatype='integer' name='G' ordinal='4' />
+            <column datatype='integer' name='A' ordinal='5' />
+            <column datatype='integer' name='P' ordinal='6' />
+            <column datatype='integer' name='PlusMinus' ordinal='7' />
+            <column datatype='integer' name='PenaltyMins' ordinal='8' />
+            <column datatype='real' name='P/GP' ordinal='9' />
+            <column datatype='integer' name='EVG' ordinal='10' />
+            <column datatype='integer' name='EVP' ordinal='11' />
+            <column datatype='integer' name='PPG' ordinal='12' />
+            <column datatype='integer' name='PPP' ordinal='13' />
+            <column datatype='integer' name='SHG' ordinal='14' />
+            <column datatype='integer' name='SHP' ordinal='15' />
+            <column datatype='integer' name='OTG' ordinal='16' />
+            <column datatype='integer' name='GWG' ordinal='17' />
+            <column datatype='integer' name='Shots' ordinal='18' />
+            <column datatype='string' name='Intials' ordinal='19' />
+            <column datatype='real' name='GoalsPerGame' ordinal='20' />
+            <column datatype='real' name='GoalsNorm' ordinal='21' />
+            <column datatype='real' name='GWGNorm' ordinal='22' />
+            <column datatype='real' name='PIMNorm' ordinal='23' />
+            <column datatype='real' name='PluMinNorm' ordinal='24' />
+            <column datatype='real' name='AvGPGNorm' ordinal='25' />
+            <column datatype='real' name='Rating' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0l3ylgh1eslyet17de9x41e1g5ej' name='FlamesDataClean.csv' table='[FlamesDataClean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='Player' ordinal='0' />
+            <column datatype='string' name='Hand' ordinal='1' />
+            <column datatype='string' name='Pos' ordinal='2' />
+            <column datatype='integer' name='GamesPlayed' ordinal='3' />
+            <column datatype='integer' name='G' ordinal='4' />
+            <column datatype='integer' name='A' ordinal='5' />
+            <column datatype='integer' name='P' ordinal='6' />
+            <column datatype='integer' name='PlusMinus' ordinal='7' />
+            <column datatype='integer' name='PenaltyMins' ordinal='8' />
+            <column datatype='real' name='P/GP' ordinal='9' />
+            <column datatype='integer' name='EVG' ordinal='10' />
+            <column datatype='integer' name='EVP' ordinal='11' />
+            <column datatype='integer' name='PPG' ordinal='12' />
+            <column datatype='integer' name='PPP' ordinal='13' />
+            <column datatype='integer' name='SHG' ordinal='14' />
+            <column datatype='integer' name='SHP' ordinal='15' />
+            <column datatype='integer' name='OTG' ordinal='16' />
+            <column datatype='integer' name='GWG' ordinal='17' />
+            <column datatype='integer' name='Shots' ordinal='18' />
+            <column datatype='string' name='Intials' ordinal='19' />
+            <column datatype='real' name='GoalsPerGame' ordinal='20' />
+            <column datatype='real' name='GoalsNorm' ordinal='21' />
+            <column datatype='real' name='GWGNorm' ordinal='22' />
+            <column datatype='real' name='PIMNorm' ordinal='23' />
+            <column datatype='real' name='PluMinNorm' ordinal='24' />
+            <column datatype='real' name='AvGPGNorm' ordinal='25' />
+            <column datatype='real' name='Rating' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Player]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>Player</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hand]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>Hand</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pos]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>Pos</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GamesPlayed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GamesPlayed]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>GamesPlayed</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>G</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[A]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>A</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>P</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[P]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>P</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PlusMinus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PlusMinus]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>PlusMinus</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PenaltyMins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PenaltyMins]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>PenaltyMins</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>P/GP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[P/GP]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>P/GP</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EVG]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>EVG</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EVP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EVP]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>EVP</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PPG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PPG]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>PPG</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PPP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PPP]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>PPP</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SHG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SHG]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>SHG</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SHP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SHP]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>SHP</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OTG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OTG]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>OTG</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GWG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GWG]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>GWG</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shots</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Shots]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>Shots</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Intials</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Intials]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>Intials</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GoalsPerGame</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GoalsPerGame]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>GoalsPerGame</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GoalsNorm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GoalsNorm]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>GoalsNorm</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GWGNorm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GWGNorm]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>GWGNorm</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PIMNorm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PIMNorm]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>PIMNorm</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PluMinNorm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PluMinNorm]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>PluMinNorm</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvGPGNorm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvGPGNorm]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>AvGPGNorm</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[FlamesDataClean.csv]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Av GPG Norm' datatype='real' name='[AvGPGNorm]' role='measure' type='quantitative' />
+      <column caption='GWG Norm' datatype='real' name='[GWGNorm]' role='measure' type='quantitative' />
+      <column caption='Games Played' datatype='integer' name='[GamesPlayed]' role='measure' type='quantitative' />
+      <column caption='Goals Norm' datatype='real' name='[GoalsNorm]' role='measure' type='quantitative' />
+      <column caption='Goals Per Game' datatype='real' name='[GoalsPerGame]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Intials]' role='dimension' type='nominal' />
+      <column caption='P/Gp' datatype='real' name='[P/GP]' role='measure' type='quantitative' />
+      <column caption='PIM Norm' datatype='real' name='[PIMNorm]' role='measure' type='quantitative' />
+      <column caption='Penalty Mins' datatype='integer' name='[PenaltyMins]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+      <column caption='Plu Min Norm' datatype='real' name='[PluMinNorm]' role='measure' type='quantitative' />
+      <column caption='Plus Minus' datatype='integer' name='[PlusMinus]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='FlamesDataClean.csv' datatype='table' name='[__tableau_internal_object_id__].[FlamesDataClean.csv_C03CAFAD78024655B368C4B8AD943424]' role='measure' type='quantitative' />
+      <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+      <column-instance column='[AvGPGNorm]' derivation='Sum' name='[sum:AvGPGNorm:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GWGNorm]' derivation='Sum' name='[sum:GWGNorm:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GoalsNorm]' derivation='Sum' name='[sum:GoalsNorm:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[PIMNorm]' derivation='Sum' name='[sum:PIMNorm:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Intials)' hidden='true' name='[Action (Intials)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Intials]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Player:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gary Roberts&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Theo Fleury&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Kent Nilsson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Joe Nieuwendyk&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jarome Iginla&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:AvGPGNorm:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:PIMNorm:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:GoalsNorm:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:GWGNorm:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='FlamesDataClean.csv' id='FlamesDataClean.csv_C03CAFAD78024655B368C4B8AD943424'>
+            <properties context=''>
+              <relation connection='textscan.0l3ylgh1eslyet17de9x41e1g5ej' name='FlamesDataClean.csv' table='[FlamesDataClean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='Player' ordinal='0' />
+                  <column datatype='string' name='Hand' ordinal='1' />
+                  <column datatype='string' name='Pos' ordinal='2' />
+                  <column datatype='integer' name='GamesPlayed' ordinal='3' />
+                  <column datatype='integer' name='G' ordinal='4' />
+                  <column datatype='integer' name='A' ordinal='5' />
+                  <column datatype='integer' name='P' ordinal='6' />
+                  <column datatype='integer' name='PlusMinus' ordinal='7' />
+                  <column datatype='integer' name='PenaltyMins' ordinal='8' />
+                  <column datatype='real' name='P/GP' ordinal='9' />
+                  <column datatype='integer' name='EVG' ordinal='10' />
+                  <column datatype='integer' name='EVP' ordinal='11' />
+                  <column datatype='integer' name='PPG' ordinal='12' />
+                  <column datatype='integer' name='PPP' ordinal='13' />
+                  <column datatype='integer' name='SHG' ordinal='14' />
+                  <column datatype='integer' name='SHP' ordinal='15' />
+                  <column datatype='integer' name='OTG' ordinal='16' />
+                  <column datatype='integer' name='GWG' ordinal='17' />
+                  <column datatype='integer' name='Shots' ordinal='18' />
+                  <column datatype='string' name='Intials' ordinal='19' />
+                  <column datatype='real' name='GoalsPerGame' ordinal='20' />
+                  <column datatype='real' name='GoalsNorm' ordinal='21' />
+                  <column datatype='real' name='GWGNorm' ordinal='22' />
+                  <column datatype='real' name='PIMNorm' ordinal='23' />
+                  <column datatype='real' name='PluMinNorm' ordinal='24' />
+                  <column datatype='real' name='AvGPGNorm' ordinal='25' />
+                  <column datatype='real' name='Rating' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0bgynu301hb5vr19o97i41tuzo4y'>
+      <datasources>
+        <datasource caption='FlamesDataClean' name='federated.0bgynu301hb5vr19o97i41tuzo4y' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0bgynu301hb5vr19o97i41tuzo4y'>
+        <column datatype='integer' name='[G]' role='measure' type='quantitative' />
+        <column-instance column='[G]' derivation='Sum' name='[sum:G:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]' included-values='in-range-or-null'>
+        <min>152</min>
+        <max>525</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Players Total Goals </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FlamesDataClean' name='federated.0bgynu301hb5vr19o97i41tuzo4y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bgynu301hb5vr19o97i41tuzo4y'>
+            <column datatype='integer' name='[G]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Intials]' role='dimension' type='nominal' />
+            <column-instance column='[Intials]' derivation='None' name='[none:Intials:nk]' pivot='key' type='nominal' />
+            <column-instance column='[G]' derivation='Sum' name='[sum:G:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Intials:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]' scope='cols' value='Total Goals' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]' value='Total Goals'>
+              <formatted-text>
+                <run>Total Goals</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Intials:nk]</rows>
+        <cols>[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]</cols>
+      </table>
+      <simple-id uuid='{2CF095DB-DEA5-4930-81AF-F3052B8CE606}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Players Game Winning Goals</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FlamesDataClean' name='federated.0bgynu301hb5vr19o97i41tuzo4y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bgynu301hb5vr19o97i41tuzo4y'>
+            <column datatype='integer' name='[GWG]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[G]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Intials]' role='dimension' type='nominal' />
+            <column-instance column='[Intials]' derivation='None' name='[none:Intials:nk]' pivot='key' type='nominal' />
+            <column-instance column='[G]' derivation='Sum' name='[sum:G:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GWG]' derivation='Sum' name='[sum:GWG:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Intials:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:GWG:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:GWG:qk]' scope='cols' value='Game Winning Goals' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Intials:nk]</rows>
+        <cols>[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:GWG:qk]</cols>
+      </table>
+      <simple-id uuid='{27712B88-EE25-4290-9B3A-E670534E8ED6}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Players Goals per Game</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FlamesDataClean' name='federated.0bgynu301hb5vr19o97i41tuzo4y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bgynu301hb5vr19o97i41tuzo4y'>
+            <column datatype='integer' name='[G]' role='measure' type='quantitative' />
+            <column caption='Goals Per Game' datatype='real' name='[GoalsPerGame]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Intials]' role='dimension' type='nominal' />
+            <column-instance column='[Intials]' derivation='None' name='[none:Intials:nk]' pivot='key' type='nominal' />
+            <column-instance column='[G]' derivation='Sum' name='[sum:G:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GoalsPerGame]' derivation='Sum' name='[sum:GoalsPerGame:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Intials:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:GoalsPerGame:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:GoalsPerGame:qk]' scope='cols' value='Average Goals Per Game' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Intials:nk]</rows>
+        <cols>[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:GoalsPerGame:qk]</cols>
+      </table>
+      <simple-id uuid='{B171DD58-9A7B-4F1E-97B9-1D7E88F97496}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FlamesDataClean' name='federated.0bgynu301hb5vr19o97i41tuzo4y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bgynu301hb5vr19o97i41tuzo4y'>
+            <column datatype='integer' name='[G]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Intials]' role='dimension' type='nominal' />
+            <column caption='Penalty Mins' datatype='integer' name='[PenaltyMins]' role='measure' type='quantitative' />
+            <column-instance column='[Intials]' derivation='None' name='[none:Intials:nk]' pivot='key' type='nominal' />
+            <column-instance column='[G]' derivation='Sum' name='[sum:G:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PenaltyMins]' derivation='Sum' name='[sum:PenaltyMins:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Intials:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:PenaltyMins:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Intials:nk]</rows>
+        <cols>[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:PenaltyMins:qk]</cols>
+      </table>
+      <simple-id uuid='{7E51D13F-9615-4EE5-9363-85A8F6A5F3DE}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Normalized Player Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FlamesDataClean' name='federated.0bgynu301hb5vr19o97i41tuzo4y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bgynu301hb5vr19o97i41tuzo4y'>
+            <column datatype='integer' name='[G]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+            <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[G]' derivation='Sum' name='[sum:G:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rating]' derivation='Sum' name='[sum:Rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:Rating:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:Rating:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:Rating:qk]' />
+              <color column='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:Rating:qk]' />
+              <text column='[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Player:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6900D853-A043-4BA7-A390-3B8D634F43C2}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FlamesDataClean' name='federated.0bgynu301hb5vr19o97i41tuzo4y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bgynu301hb5vr19o97i41tuzo4y'>
+            <column caption='Av GPG Norm' datatype='real' name='[AvGPGNorm]' role='measure' type='quantitative' />
+            <column caption='GWG Norm' datatype='real' name='[GWGNorm]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[G]' role='measure' type='quantitative' />
+            <column caption='Goals Norm' datatype='real' name='[GoalsNorm]' role='measure' type='quantitative' />
+            <column caption='PIM Norm' datatype='real' name='[PIMNorm]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+            <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[AvGPGNorm]' derivation='Sum' name='[sum:AvGPGNorm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[G]' derivation='Sum' name='[sum:G:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GWGNorm]' derivation='Sum' name='[sum:GWGNorm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GoalsNorm]' derivation='Sum' name='[sum:GoalsNorm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PIMNorm]' derivation='Sum' name='[sum:PIMNorm:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bgynu301hb5vr19o97i41tuzo4y].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:AvGPGNorm:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:GWGNorm:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:GoalsNorm:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:PIMNorm:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Player:nk]'>
+            <groupfilter function='member' level='[none:Player:nk]' member='&quot;Jarome Iginla&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]</column>
+            <column>[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Player:nk]</column>
+            <column>[federated.0bgynu301hb5vr19o97i41tuzo4y].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0bgynu301hb5vr19o97i41tuzo4y].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0bgynu301hb5vr19o97i41tuzo4y].[Multiple Values]</rows>
+        <cols>([federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Player:nk] / [federated.0bgynu301hb5vr19o97i41tuzo4y].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{30B8161E-F5DA-49D9-BA67-2E91B5E30497}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='FlamesDataClean' name='federated.0bgynu301hb5vr19o97i41tuzo4y' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0bgynu301hb5vr19o97i41tuzo4y'>
+        <column datatype='integer' name='[G]' role='measure' type='quantitative' />
+        <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+        <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+        <column-instance column='[G]' derivation='Sum' name='[sum:G:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98454' id='11' param='horz' w='99166' x='417' y='773'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98454' id='9' w='92708' x='417' y='773'>
+              <zone h='33649' id='3' name='Sheet 5' w='92708' x='417' y='44203'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43430' id='5' name='Sheet 1' show-title='false' w='23184' x='46756' y='773'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43430' id='6' name='Sheet 2' show-title='false' w='23176' x='23580' y='773'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43430' id='7' name='Sheet 3' show-title='false' w='23163' x='417' y='773'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43430' id='8' name='Sheet 4' show-title='false' w='23185' x='69940' y='773'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='21375' id='13' name='Sheet 6' show-title='false' w='92708' x='417' y='77852'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='124' h='98454' id='10' is-fixed='true' param='vert' w='6458' x='93125' y='773'>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='7440' id='12' name='Sheet 1' param='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]' values='database' w='6458' x='93125' y='773'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='91014' id='15' name='Sheet 6' param='[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Player:nk]' values='database' w='6458' x='93125' y='8213'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='19' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98044' id='18' param='vert' w='99002' x='499' y='978'>
+                <zone fixed-size='280' h='43263' id='7' is-fixed='true' name='Sheet 3' show-title='false' w='22813' x='499' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43263' id='6' is-fixed='true' name='Sheet 2' show-title='false' w='22818' x='23312' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='9413' id='12' name='Sheet 1' param='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:G:qk]' values='database' w='7731' x='91770' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43263' id='5' is-fixed='true' name='Sheet 1' show-title='false' w='22820' x='46130' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43263' id='8' is-fixed='true' name='Sheet 4' show-title='false' w='22820' x='68950' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='260' h='33513' id='3' is-fixed='true' name='Sheet 5' w='91271' x='499' y='44241'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='88631' id='15' mode='checkdropdown' name='Sheet 6' param='[federated.0bgynu301hb5vr19o97i41tuzo4y].[none:Player:nk]' values='database' w='7731' x='91770' y='10391'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='162' h='21268' id='13' is-fixed='true' name='Sheet 6' show-title='false' w='91271' x='499' y='77754'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DE365275-1D58-422D-AA7E-41081054F151}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{116965F9-8ECC-4032-BE4C-511E0666A647}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A0BA485A-7D1D-44B4-BD77-EA78336B70DB}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BF1EA3D6-04A4-42B3-8CEE-5339A93DEADE}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{84A5110B-3AB5-45C4-B767-FB7720759D5B}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bgynu301hb5vr19o97i41tuzo4y].[sum:Rating:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2400A17F-4018-47F4-89C7-5CBBFA7ED58C}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bgynu301hb5vr19o97i41tuzo4y].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1613B77A-0934-4250-9A9F-74328A2F7C8E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4' />
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{76A2B2A3-919D-4FA0-AC65-B6142B6C22CC}' />
+    </window>
+  </windows>
+</workbook>
